@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Facebook Auto E2EE Messenger",
+  "version": "1.0",
+  "description": "Automatically sends E2EE messages on Facebook Messenger at set intervals",
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "permissions": ["activeTab", "scripting"],
+  "host_permissions": ["*://*.facebook.com/*", "*://*.messenger.com/*"]
+}
