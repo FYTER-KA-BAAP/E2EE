@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Auto E2EE Messenger</title>
+  <style>
+    body {
+      width: 250px;
+      padding: 15px;
+      font-family: Arial, sans-serif;
+    }
+    textarea, input, button {
+      width: 100%;
+      margin-bottom: 10px;
+      padding: 8px;
+      box-sizing: border-box;
+    }
+    button {
+      background-color: #1877f2;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    button:disabled {
+      background-color: #cccccc;
+    }
+  </style>
+</head>
+<body>
+  <h3>Auto E2EE Messenger</h3>
+  <textarea id="message" placeholder="Enter your E2EE message"></textarea>
+  <input type="number" id="interval" placeholder="Interval in seconds" min="5">
+  <button id="start">Start Sending</button>
+  <button id="stop" disabled>Stop Sending</button>
+
+  <script src="popup.js"></script>
+</body>
+</html>
